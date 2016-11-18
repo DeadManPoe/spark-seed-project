@@ -5,7 +5,9 @@ import org.apache.spark.{SparkConf, SparkContext}
 object PiScala {
 
   def main(args:Array[String]) : Unit = {
-
+    val conf = new SparkConf(true).
+      setAppName("Spark PiScala")
+    val sc = new SparkContext(conf)
     val NUM_SAMPLES = 10000
     val count = sc.parallelize(1 to NUM_SAMPLES).map{i =>
       val x = Math.random()
