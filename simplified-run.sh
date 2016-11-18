@@ -1,5 +1,5 @@
 CLASS="it.polimi.dice.spark.PiExample.class"
-MASTER="yarn-cluster" #Insert master
+MASTER="yarn-client" #Insert master
 NUM_EXECUTORS=1 #Insert number_of_executors
 DRIVER_MEMORY="512m" #Insert amount of driver-memory
 EXECUTOR_MEMORY="512m" #Insert amount of executor-memory
