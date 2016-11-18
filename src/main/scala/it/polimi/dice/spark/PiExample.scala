@@ -2,7 +2,7 @@ package it.polimi.dice.spark
 
 import org.apache.spark.{SparkConf, SparkContext}
 
-object PiScala {
+object PiExample {
 
   def main(args:Array[String]) : Unit = {
     val conf = new SparkConf(true).
